@@ -1,2 +1,10 @@
-# android_device_vivo_PD2165
- TWRP device tree for iQOO  U5 (PD2165)
+# Android device tree for vivo V2165A (PD2165)
+
+```
+#
+# Copyright (C) 2023 The Android Open Source Project
+# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+```
