@@ -1,5 +1,5 @@
-## Team Win Recovery Project : PD2165
-![iQOO U5](https://shopstatic.vivo.com.cn/vivoshop/commodity/50/10007050_1640084094595_1080x1080.png "iQOO U5")
+## Team Win Recovery Project : PD2165F
+![vivo T1 5G India](https://shopstatic.vivo.com.cn/vivoshop/commodity/50/10007050_1640084094595_1080x1080.png "vivo T1 5G India")
 
 
 | Feature                 | Specification                                                              |
@@ -14,4 +14,4 @@
 
 
 ## Compatible Devices
-- iQOO U5
+- vivo T1 5G India
