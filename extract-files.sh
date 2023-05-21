@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=PD2165
+DEVICE=PD2165F
 VENDOR=vivo
 
 # Load extract_utils and do some sanity checks

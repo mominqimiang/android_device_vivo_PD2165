@@ -59,6 +59,10 @@ on post-fs-data && property:ro.debuggable=1
     mkdir /data/debug 0777 root root
     start tombstoned
 
+on property:recovery.metadata.is.mounted=1
+    mkdir /metadata/ota 0700 root system
+    mkdir /metadata/ota/snapshots 0700 root system
+
 on late-init
     # Load properties from /system/ + /factory after fs mount. Place
     # this in another action so that the load will be scheduled after the prior
@@ -99,6 +103,7 @@ service hwservicemanager /system/bin/hwservicemanager
     onrestart setprop hwservicemanager.ready false
     writepid /dev/cpuset/system-background/tasks
     seclabel u:r:recovery:s0
+
 
 service tombstoned /system/bin/tombstoned
     user root
@@ -147,3 +152,13 @@ service crash_log /system/bin/little_buddy --crash_log
 
 on property:recovery.svc.start.copy_log=1
     start crash_log
+
+service temp_info /system/bin/little_buddy --temp_info
+    disabled
+    user root
+    group root
+    onrestart setprop recovery.svc.start.temp_info 0
+    seclabel u:r:recovery:s0
+
+on property:recovery.svc.start.temp_info=1
+    start temp_info

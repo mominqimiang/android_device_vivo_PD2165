@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_PD2165.mk
+    $(LOCAL_DIR)/omni_PD2165F.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_PD2165-user \
-    omni_PD2165-userdebug \
-    omni_PD2165-eng
+    omni_PD2165F-user \
+    omni_PD2165F-userdebug \
+    omni_PD2165F-eng

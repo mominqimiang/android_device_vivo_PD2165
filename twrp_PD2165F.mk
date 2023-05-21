@@ -12,18 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
-# Inherit from PD2165 device
+# Inherit from PD2165F device
 $(call inherit-product, device/vivo/PD2165/device.mk)
 
-PRODUCT_DEVICE := PD2165
-PRODUCT_NAME := twrp_PD2165
+PRODUCT_DEVICE := PD2165F
+PRODUCT_NAME := twrp_PD2165F
 PRODUCT_BRAND := vivo
-PRODUCT_MODEL := V2165A
+PRODUCT_MODEL := V2141
 PRODUCT_MANUFACTURER := vivo
 
 PRODUCT_GMS_CLIENTID_BASE := android-vivo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="qssi-user 12 SP1A.210812.003 compiler03232051 release-keys"
+    PRIVATE_BUILD_DESC="qssi-user 13 TP1A.220624.014 eng.compil.20230403.175445 release-keys"
 
 BUILD_FINGERPRINT := vivo/PD2165B/PD2165:12/SP1A.210812.003/compiler03232051:user/release-keys
